@@ -1,49 +1,90 @@
-# Eaze Front End Homework
+# GiphyChat
 
-Front End coding challenge.
+A messaging-application using React and Firebase utilizing the giphy API.  
 
-## Project
+# To Start: 
 
-We would like you to build a web app that displays the trending GIFs on [Giphy](https://giphy.com/).
-Users visiting the website should be able to search for GIFs and see a list of results. The user should be able to expand a GIF and see its details (username, rating, anything you think could be relevant).
+* Run `npm install` and `npm start`.
 
-Users should have a good user experience on desktop, tablet and mobile devices.
+### Users Can:
+* Create an account.  
+* Login.  
+* Logout.
+* Change the color of the App and save multiple color selections to their account.
+* Find or create a new chat-channel.
+* Start posting text, images, emojis, or gifs. 
+* Favorite a channel.
+* Search Giphy
+* Avatar is defaulted to use a gravatar. However user can change their avatar.
+* Can upload avatar and crop and preview the image.
+* Direct Message other registered users. Will display if they are online or not.
 
-This project is pretty open ended in order to leave you some freedom to improve upon the base by focusing on what you like the most.
+### GiphyChat features:
+* Searching gifs will display the first 8.  
+* Home page will display the top 100 trending gifs.  
+* Infinite Scroll for top 100 gifs.
+* Displays new notifications if a new post is created by another user.  
+* Will display the currently active channel .
+* Show number of users active in the selected channel.
+* Loading Skeleton for messages.
+* Progress bar for file uploading.
+* Private Direct Messaging.
+* Fully responsive.
+* Displays when other user is typing feature
+* Displays when a post was created.
+* Custom keyboard input commands
+* Select and post Emojis
+* Loading Spinner.
 
-We strongly encourage you to pick a couple of optional improvements. The following are just some ideas, so if none of these interest you, feel free to do something that isn’t on this list:
 
-- When the user scrolls the page to the bottom, load new GIFs automatically.
-- Create a mosaic layout and display a placeholder when GIFs are still loading.
-- Show off your animation skills!
-- Sort the results by uploaded time and let the user choose if they prefer ascending or descending ordering.
-- Let the user favorite GIFs and list their favorites. The users should be able to retrieve their favorite GIFs even after refreshing the page.
-- Provide the ultimate user experience: scrolling, searching, fetching… could be optimized for UX.
-- Let the user upload a GIF.
-- Add some unit tests.
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
+
+## Getting Started With GiphyChat
+
+You will be automatically directed to Login.  If you don't have an account, proceed to Registration. 
 
 
-### Project Structure
+# Screenshots
 
-We've included all of the boilerplate to get started with this project using [create-react-app](https://github.com/facebookincubator/create-react-app), feel free to use this structure if you'd like. If you'd prefer to use something other than React or you'd prefer a different project structure, go ahead and make any changes you'd like.
+### Dashboard: Top 100 trending-inifinte scroll
+<img width="1279" alt="homepage" src="https://user-images.githubusercontent.com/43252585/53373897-9d6b7700-390b-11e9-91f5-c3829c1420e3.png">
 
-### Evaluation
+### Search Giphy: Displays 8
+<img width="1279" alt="searchgiphy" src="https://user-images.githubusercontent.com/43252585/53373891-9d6b7700-390b-11e9-9784-49bd08821565.png">
 
-The app should run on any computer by running `npm install` and `npm start`.
-We’ll evaluate the exercise by looking at the end result and the code.
+### Change avatar, upload image: crop and preview
+<img width="1279" alt="changeavatar" src="https://user-images.githubusercontent.com/43252585/53373892-9d6b7700-390b-11e9-9f05-b4c29361fd42.png">
 
-### Notes
+### Direct Messages with users
+<img width="1279" alt="directmessages" src="https://user-images.githubusercontent.com/43252585/53373895-9d6b7700-390b-11e9-908a-ec88a1a483b9.png">
 
-Please, don't open a PR against this repo. Just follow the direction from the recruiter on how to submit the exercise.
+### File Upload
+<img width="1279" alt="fileupload" src="https://user-images.githubusercontent.com/43252585/53373889-9cd2e080-390b-11e9-8e12-dca6eb076223.png">
 
-### Coding at Eaze
+### Color Changing
+<img width="1279" alt="changeappcolor" src="https://user-images.githubusercontent.com/43252585/53373894-9d6b7700-390b-11e9-9b1a-935da3dd59d8.png">
+#### Color Change Modal
+<img width="1279" alt="changeappcolormodal" src="https://user-images.githubusercontent.com/43252585/53373893-9d6b7700-390b-11e9-86cc-5aba1cde0002.png">
+#### App Color is Now Changed!
+<img width="1279" alt="appcolorhaschaged" src="https://user-images.githubusercontent.com/43252585/53373886-9cd2e080-390b-11e9-8b5e-5560749221b2.png">
 
-At [Eaze](https://www.eaze.com) we strive for writing simple, maintainable and clean code.
+### Starred Channels
+<img width="1279" alt="starred" src="https://user-images.githubusercontent.com/43252585/53373896-9d6b7700-390b-11e9-9096-2d703c633535.png">
 
-We prefer simplicity over complexity.
+### Emojis
+<img width="1279" alt="emoji" src="https://user-images.githubusercontent.com/43252585/53373887-9cd2e080-390b-11e9-83e9-aa2bf0ae9318.png">
 
-We comment our code and commit often.
 
-We love our users and we really care about providing a good user experience and pleasant UI.
-
-We encourage out of the box thinking and we love to be impressed!
+## Notes:
+* Moving forward I would like to use a GIPHY production key. I’m still awaiting to be approved for that.
+* I would like to add a "like" feature for gifs and store them to the user.
